@@ -1,20 +1,18 @@
 package com.example.myschoolproject;
 
 
-
 public class Dog {
+
+
     @Override
     public String toString() {
         return "Dog{" +
                 "ID='" + ID + '\'' +
-                ", Name='" + Name + '\'' +
-                ", Company='" + Company + '\'' +
-                ", AuxData='" + AuxData + '\'' +
+                ", name='" + name + '\'' +
+                ", company='" + company + '\'' +
+                ", auxdata='" + auxdata + '\'' +
                 '}';
     }
-
-    private String ID;
-    private String Name;
 
     public String getID() {
         return ID;
@@ -25,30 +23,31 @@ public class Dog {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getCompany() {
-        return Company;
+        return company;
     }
 
     public void setCompany(String company) {
-        Company = company;
+        this.company = company;
     }
 
-    public String getAuxData() {
-        return AuxData;
+    public String getAuxdata() {
+        return auxdata;
     }
 
-    public void setAuxData(String auxData) {
-        AuxData = auxData;
+    public void setAuxdata(String auxdata) {
+        this.auxdata = auxdata;
     }
 
-    private String Company;
-    private String AuxData;
-
+    private String ID;
+    private String name;
+    private String company;
+    private String auxdata;
 }
